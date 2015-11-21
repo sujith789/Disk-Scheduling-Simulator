@@ -1,0 +1,17 @@
+
+READ ME FILE
+-------------
+
+1) Run the command for make file- make -f makefile
+2) Run ./simdisk
+
+
+Usage
+-----------
+
+printf("\n Usage Summary - simdisk [-h] [-n number-of-cylinders] [-d disk-shed-policy] [-i input file]\n");
+printf("OPTIONS:\n");
+printf("-h\t: Print a usage summary with all options and exit.\n");
+printf("-n number-of-cylinders\t: Set the total number cylinders on the disk. By default it should be 200.\n");
+printf("-d disk-shed-policy\t: Set the disk scheduling policy. It can be either FCFS (First-come-first-served), SSTF (Shortest-seek-time-first), C-SCAN, or LOOK. The default will be FCFS. Assume at the t=t0, the disk was moving from 0 towards other end of the disk.\n");
+printf("-i input file\t: Read the request sequence from a specified file. If not given, the sequence should be read from STDIN (ended with ENTER).\n");
